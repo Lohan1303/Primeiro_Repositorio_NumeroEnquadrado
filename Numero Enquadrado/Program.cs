@@ -1,9 +1,10 @@
-﻿/*
-    Números enquadrados
-     
+﻿/**********************************************
+              Números enquadrados
+
+     Autor: Lohan Batista Moreira
+     Data: 30/04/2022
  
- 
- */
+************************************************/
 
 static int Inverter(int numero)
 {
@@ -18,10 +19,15 @@ static int Inverter(int numero)
     return int.Parse(resultado);
 }
 
-for (int i = 10; i < 99; i++)
+static void NumQuadrado()
 {
-    int resultado = i + Inverter(i);
-    int raiz = Convert.ToInt16(Math.Sqrt(resultado));
-    if (Math.Sqrt(resultado) == raiz)
-        Console.WriteLine(i);
+    for (int i = 10; i < 99; i++)
+    {
+        int resultado = i + Inverter(i);
+        int raiz = Convert.ToInt16(Math.Sqrt(resultado));
+        if (Math.Sqrt(resultado) == raiz)
+            Console.WriteLine(i);
+    }
 }
+
+NumQuadrado();
